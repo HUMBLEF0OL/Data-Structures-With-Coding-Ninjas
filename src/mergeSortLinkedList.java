@@ -28,7 +28,7 @@ public class mergeSortLinkedList {
         }
         if (head1 != null) {
             tail.next = head1;
-        } else {
+        } else if(head2 != null){
             tail.next = head2;
         }
         return head;
