@@ -32,5 +32,13 @@ public class basicFunctions {
         int result = linkedListLength(head.next);
         return ++result;
     }
+    /* find a node recursively */
+    public int findNode(LinkedListNode<Integer> head, int nodeData){
+        if(head == null)return -1;
+        if(head.data == nodeData)return 0;
+        int result = findNode(head.next, nodeData);
+        if(result == -1)return -1;
+        return ++result;
+    }
     
 }
